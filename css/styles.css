@@ -197,23 +197,26 @@ header {}
     margin: 0 auto;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
-    max-width: 1440px;
+    max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-bottom: 48px;
 }
 
 .hero-main {
-    font-size: 56px;
-    line-height: 1.07;
+   
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
 
 }
 
@@ -269,7 +272,7 @@ header {}
 .second-section {
     /* padding-top: 120px; */
     padding-top: 48px;
-    padding-bottom: 60px;
+    padding-bottom: 48px;
 }
 
 .visually-hidden {
@@ -518,8 +521,8 @@ header {}
     /* width: 1158px; */
     max-width: 320px;
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 52px;
+    padding-right: 52px;
     margin: 0 auto;
 
 }
@@ -892,9 +895,16 @@ header {}
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-    .container {max-width: 768px;}
+    .container {
+        max-width: 768px;
+        padding-left: 136px;
+            padding-right: 136px;
+
+    
+    }
         .strenghts-list-item {
             width: calc((100% - 24px) / 2);
+            
         }
 .our-strength-main {
  
@@ -961,6 +971,21 @@ header {}
 gap: 0;
 
 }
+.first-section {
+    margin-bottom: 0;
+    padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
+}
+.hero-main {
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin-bottom: 36px;
+
+}
 }
 
 /* LAP-TOP */
@@ -976,6 +1001,7 @@ gap: 0;
         }
                 .second-section{
                     padding-top: 60px;
+                    padding-bottom: 60px;
                 }
                                 .our-strength-main{
                                     gap: 24px;
@@ -1060,5 +1086,17 @@ gap: 0;
 }
 .footer-form {
     gap: 24px;
+}
+.hero-main {
+    font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 48px;
+        max-width: 496px;
+}
+.first-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    
 }
 }
