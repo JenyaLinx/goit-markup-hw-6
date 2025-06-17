@@ -32,6 +32,9 @@ img {
     margin-right: 76px;
     color: #404bbf;
     position: relative;
+    padding-left: 16px;
+    padding-top: 17.5px;
+        padding-bottom: 17.5px;
 
 
 }
@@ -39,6 +42,8 @@ img {
 .logo-one {
 
     color: #2e2f42;
+    
+    
 
 }
 
@@ -74,13 +79,15 @@ address {
 
 .hero {
 
-    display: flex;
+    
+    display: none;
     gap: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-adress-list {
-    display: flex;
+    
+    display: none;
     gap: 40px;
     margin-left: 0;
 
@@ -93,6 +100,7 @@ address {
 
 .header-div {
     display: flex;
+    
     align-items: center;
 
 }
@@ -163,13 +171,21 @@ header {}
     position: absolute;
     left: 0;
 }
-
+.mob-current:active {
+    color: #404bbf;
+}
 .hero-text:hover,
 .hero-text:focus,
 .hero-texs:hover,
 .hero-texs:focus {
     color: #404bbf;
 }
+.mob-menu-list-studio:hover,
+.mob-menu-list-studio:focus,
+ {
+    color: #404bbf;
+}
+
 
 .effective-solution {}
 
@@ -204,6 +220,8 @@ header {}
     padding-top: 72px;
     padding-bottom: 72px;
     margin-bottom: 48px;
+    padding-left: 52px;
+    padding-right: 52px;
 }
 
 .hero-main {
@@ -239,7 +257,15 @@ header {}
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
+.menu-open-btn {
+   border: none;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+    display: block;
+    margin-top: 20.8px;
+    margin-bottom: 20.8px;
+}
 
 .hero-button:hover,
 .hero-button:focus {
@@ -254,6 +280,137 @@ header {}
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
+}
+.mob-menu {
+width: 100%;
+height: 100%;
+position: fixed;
+background-color: #fff;
+top: 0;
+z-index: 10;
+padding-top: 24px;
+padding-left: 16px;
+padding-bottom: 40px;
+padding-right: 24px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: auto;
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+
+}
+
+.modal-close {
+
+}
+
+.mob-menu-close {
+display: block;
+margin-left: auto;
+background-color: transparent;
+border-radius: 100%;
+   
+    stroke-width: 1px;
+    stroke: #2e2f42;
+    
+   
+}
+
+.modal-close-ph {
+
+}
+
+.modal-close-ph-hover {
+
+}
+
+.mob-menu-text {
+    margin-top: 105px;
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    
+    
+}
+
+.mob-menu-list-studio {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+    color: #404bbf;
+    
+  
+    
+    
+}
+.mob-menu-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+   
+    
+    
+}
+
+.mob-menu-adress-list {
+    /* display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 24px; */
+}
+.mob-menu-details {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #4d5ae5;
+}
+.mob-menu-details-2 {
+    color: #434455;
+}
+
+.mob-menu-social-media {
+margin-top: 48px;
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+   
+       
+   
+}
+
+.mob-menu-media-link {
+   
+    width: 40px;
+    height: 40px;
+    
+}
+
+.social-media-foto {
+    width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+}
+
+.social-media-icon {
+    
+    
 }
 
 /* SECTION 2 */
@@ -337,6 +494,9 @@ header {}
     background-color: #F4F4FD;
     padding-top: 96px;
     padding-bottom: 96px;
+    padding-left: 28px;
+    padding-right: 28px;
+
     
 
 }
@@ -452,7 +612,10 @@ header {}
     display: flex;
     align-items: center;
 }
+.mob-menu-social-media .mob-menu-media-link .social-media-foto {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 .social-media .social-media-link .social-media-foto {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -521,8 +684,8 @@ header {}
     /* width: 1158px; */
     max-width: 320px;
     width: 100%;
-    padding-left: 52px;
-    padding-right: 52px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 
 }
@@ -714,7 +877,7 @@ header {}
 }
 
 .modal-close {
-    background-color: #e7e9fc;
+    
     border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     display: flex;
@@ -897,19 +1060,55 @@ header {}
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        padding-left: 136px;
+        
             padding-right: 136px;
+            padding-left: 136px;
 
     
     }
+        .header-div {
+            
+   
+            
+        }
+        .logo-fix {
+            padding-top: 25.5px;
+                padding-bottom: 25.5px;
+        }
         .strenghts-list-item {
             width: calc((100% - 24px) / 2);
             
         }
+                .hero-adress-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    margin-right: 0;
+                    
+                    
+                       
+                }
+                                .hero {
+                                    display: flex;
+                                }
 .our-strength-main {
  
     gap: 24px;
     margin: 48px;
+}
+.modal-close {
+    background-color: #e7e9fc;
+}
+.menu-open-btn {
+    display: none;
+}
+.hero-text {
+
+}
+.our-team-section {
+    padding-top: 108px;
+    padding-bottom: 108px;
+
 }
 .team-list {
     display: flex;
@@ -934,6 +1133,9 @@ header {}
 }
 .text-subscribe {
     
+}
+.social-media {
+  
 }
 .footer-form {
     display: flex;
@@ -976,6 +1178,9 @@ gap: 0;
     padding-top: 112px;
         padding-bottom: 112px;
         max-width: 768px;
+        padding-right: 136px;
+        padding-left: 136px;
+
 }
 .hero-main {
     font-weight: 700;
@@ -984,7 +1189,12 @@ gap: 0;
         letter-spacing: 0.02em;
         max-width: 496px;
         margin-bottom: 36px;
+        
+        
 
+}
+.footer-section-div {
+  
 }
 }
 
@@ -995,10 +1205,12 @@ gap: 0;
         max-width: 1158px;
         padding-left: 15px;
             padding-right: 15px;
+          
     }
         .first-item {
             display: flex;
         }
+                
                 .second-section{
                     padding-top: 60px;
                     padding-bottom: 60px;
@@ -1019,6 +1231,25 @@ gap: 0;
 .our-team-section {
     padding-top: 120px;
         padding-bottom: 120px;
+
+}
+.logo-one {
+    padding-top: 0;
+        padding-bottom: 0;
+        
+        
+}
+.hero-adress-list {
+    display: flex;
+    gap: 40px;
+
+
+
+}
+.logo-fix {
+    padding-left: 0;
+    padding-top: 0;
+        padding-bottom: 0;
 }
 .our-portfolio-section {
     padding-top: 120px;
