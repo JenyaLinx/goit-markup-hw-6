@@ -274,12 +274,15 @@ header {}
 }
 
 .our-strength {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    margin-bottom: 8px;
+    
+    
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 8px;
 }
 .mob-menu {
 width: 100%;
@@ -450,6 +453,7 @@ display: flex;
     flex-wrap: wrap;
     /* gap: 24px; */
     gap: 20px;
+    
 
 
 }
@@ -461,8 +465,12 @@ display: flex;
 }
 
 .our-text {
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 72px;
 }
 
 .div-name {
@@ -1061,11 +1069,10 @@ display: flex;
     .container {
         max-width: 768px;
         
-            padding-right: 136px;
-            padding-left: 136px;
-
-    
     }
+        .header-maine {
+            
+        }
         .header-div {
             
    
@@ -1074,7 +1081,12 @@ display: flex;
         .logo-fix {
             padding-top: 25.5px;
                 padding-bottom: 25.5px;
+              
         }
+                .menu-header-tab {
+                    margin-left: 121px;
+
+                }
         .strenghts-list-item {
             width: calc((100% - 24px) / 2);
             
@@ -1091,6 +1103,9 @@ display: flex;
                                 .hero {
                                     display: flex;
                                 }
+.hero-button {
+    margin-top: 0;
+}
 .our-strength-main {
  
     gap: 24px;
@@ -1110,12 +1125,13 @@ display: flex;
     padding-bottom: 108px;
 
 }
+
 .team-list {
     display: flex;
 }
 .team-list-item{
     width: calc((100% - 24px) / 2);
-    margin-bottom: 64px;
+    
 }
 
 .portfolio-list-item {
@@ -1189,9 +1205,16 @@ gap: 0;
         letter-spacing: 0.02em;
         max-width: 496px;
         margin-bottom: 36px;
+        font-weight: 700;
+        text-align: center;
+            
         
         
 
+}
+.effective-solution-tab {
+    padding-left: 0;
+    padding-right: 0;
 }
 .footer-section-div {
   
@@ -1219,15 +1242,32 @@ gap: 0;
                                     gap: 24px;
                                     padding-bottom: 72px;
                                 }
+.our-strength {
+                                    font-weight: 500;
+                                            font-size: 20px;
+                                            line-height: 1.2;
+                                            letter-spacing: 0.02em;
+                                            color: #2E2F42;             
+                                            margin-bottom: 8px; 
+                                        }
                                   .strenghts-list-item{
                                     width: calc((100% - 72px) / 4);
                                   }
                                                                   .team-list-item {
                                                                     width: calc((100% - 72px) / 4);
                                                                                                       }
- .team-list {
+                                                                                                      .team-list {
     display: flex;
 }
+.our-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    color: #434455;
+    margin-bottom: 0;
+}
+
 .our-team-section {
     padding-top: 120px;
         padding-bottom: 120px;
@@ -1250,6 +1290,12 @@ gap: 0;
     padding-left: 0;
     padding-top: 0;
         padding-bottom: 0;
+        margin-right: 0 auto;
+}
+.menu-header-tab {
+  margin-left: 332px;
+ 
+
 }
 .our-portfolio-section {
     padding-top: 120px;
