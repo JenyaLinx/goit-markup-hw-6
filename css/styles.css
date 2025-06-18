@@ -304,6 +304,11 @@ pointer-events: none;
 visibility: hidden;
 
 }
+.mob-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
 
 .modal-close {
 
@@ -516,7 +521,14 @@ display: flex;
     gap: 24px;
 }
 
-.third-section {}
+
+
+.container.third-section {
+   max-width: 264px;
+   padding-left: 0;
+   padding-right: 0;
+   
+}
 /* 4 SECTION */
 
 .section-header-main {
@@ -1109,7 +1121,19 @@ display: flex;
 .our-strength-main {
  
     gap: 24px;
-    margin: 48px;
+    margin: 0;
+}
+.our-strength {
+    text-align: left;
+}
+.second-section {
+    padding-top: 96px;
+}
+.container.third-section {
+    max-width: 552px;
+    padding-left: 16px;
+        padding-right: 16px;
+ 
 }
 .modal-close {
     background-color: #e7e9fc;
@@ -1123,6 +1147,7 @@ display: flex;
 .our-team-section {
     padding-top: 108px;
     padding-bottom: 108px;
+    
 
 }
 
@@ -1228,19 +1253,28 @@ gap: 0;
         max-width: 1158px;
         padding-left: 15px;
             padding-right: 15px;
+            
           
+    }
+    .container.third-section {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    
+    
     }
         .first-item {
             display: flex;
         }
                 
                 .second-section{
-                    padding-top: 60px;
+                    padding-top: 120px;
                     padding-bottom: 60px;
                 }
                                 .our-strength-main{
                                     gap: 24px;
                                     padding-bottom: 72px;
+                                    margin: 0;
                                 }
 .our-strength {
                                     font-weight: 500;
@@ -1248,7 +1282,8 @@ gap: 0;
                                             line-height: 1.2;
                                             letter-spacing: 0.02em;
                                             color: #2E2F42;             
-                                            margin-bottom: 8px; 
+                                            margin-bottom: 8px;
+                                            text-align: center; 
                                         }
                                   .strenghts-list-item{
                                     width: calc((100% - 72px) / 4);
